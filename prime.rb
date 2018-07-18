@@ -9,5 +9,4 @@ def prime?(num)
   end
  prevnum = (2..num-1).to_a
  prevnum.all? { |del| num % del != 0 }
-
 end
