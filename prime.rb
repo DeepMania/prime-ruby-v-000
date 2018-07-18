@@ -9,7 +9,7 @@ def prime?(num)
   end
  prevnum = (2..num-1).to_a
  prevnum.each do |del|
-   if num % del != 0
+   if num % del == 0
      return false
    else
      return true
