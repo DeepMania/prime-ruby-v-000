@@ -1,4 +1,5 @@
 # Add  code here!
+require "pry"
 def prime?(num)
  num = num.abs
   if num == 0 || num == 1
