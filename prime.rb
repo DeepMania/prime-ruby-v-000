@@ -8,8 +8,11 @@ def prime?(num)
    return true
   end
  prevnum = (2..num-1).to_a
- prevnum.any? do |del|
-   binding.pry
-   num % del != 0
+ prevnum.each do |del|
+   if num % del != 0
+     return false
+   else
+     return true
+   end
  end
 end
