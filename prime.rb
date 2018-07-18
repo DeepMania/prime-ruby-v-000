@@ -8,8 +8,6 @@ def prime?(num)
    return true
   end
  prevnum = (2..num-1).to_a
- prevnum.all? do |del|
-
-   num % del != 0
+ prevnum.all? { |del| num % del != 0 }
  end
 end
